@@ -12,8 +12,9 @@ use Symfony\Component\Serializer\Normalizer\ObjectNormalizer;
 class InputPhpJsonFile
 {
     private $arrayJson;
+    private $arrayClearJson;
     private $arrayObject=array();
-
+    private $itemamount=0;
 
 //$transaction=file_get_contents('transactions_mock.json');
 //dd($transaction);
@@ -27,16 +28,52 @@ class InputPhpJsonFile
         return  $this->arrayJson;
     }
 
-    public function hydrateJsonToObject($arrayJson)
+
+    // --->>>treatment and modify "amount"
+    public function clearAmount(){  // because
+
+         $i=0;
+        foreach ($this->arrayJson as $item) {
+
+            //$amount=$item['amount'];
+
+            $item['amount']=$this->filterItemAmount($item['amount']);
+
+            $this->arrayClearJson[$i]=$item;
+         $i++;
+        }
+
+        return  $this->arrayClearJson;
+    }
+
+    public function filterItemAmount($itema){
+
+        $this->itemamount=$itema;
+
+        $exchangeRates = [
+            '€' => 1,  // reference euro
+            '$' => 0.88,
+            '¥' => 0.008,
+            '£' => 1.13
+        ];
+
+        $extractexchange=mb_substr($this->itemamount, 0, 1);
+
+        $extractamount=mb_substr($this->itemamount, 1);
+
+        $this->itemamount=round(floatval($extractamount) * $exchangeRates[ $extractexchange], 2);
+
+        return  $this->itemamount;
+    }
+
+    //<<---treatment and modify "amount"
+
+
+    public function hydrateJsonToObject()
     {
-
-       // $this->arrayObject = $serializer->deserialize( $this->arrayJson, TCustomer::class,'transactions_mock.json' );
-
-        //dd($arrayJson[0]["event_name"]);
-
         $customer = new TCustomer();
         $i=1;
-        foreach ($arrayJson as $result) {
+        foreach ($this->clearAmount() as $result) {
 
                 $customer = new TCustomer();
 
@@ -58,8 +95,6 @@ class InputPhpJsonFile
 
              $i++;
         }
-
-            dd($this->arrayObject);
 
         return  $this->arrayObject;
     }

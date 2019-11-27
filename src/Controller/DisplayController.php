@@ -22,26 +22,18 @@ class DisplayController extends AbstractController
      */
     public function index(InputPhpJsonFile $arrayJson1,PaginatorInterface $paginator,Request $request,SerializerInterface $serializer)
     {
-       // $transaction=file_get_contents('transactions_mock.json');
-       // dd($transaction);
+        $arrayJson1->decodeJson();
 
-        $arrayJson2=$arrayJson1->decodeJson();  // $arrayJson2 is just a array
+        $arrayJson1->clearAmount();
 
-
-
-        ($arrayJson1->hydrateJsonToObject($arrayJson2));
-
-        //dd($arrayJson1->hydrateJsonToObject($arrayJson2)); //  pour test
+        $arrayJson1=$arrayJson1->hydrateJsonToObject();
 
 
         $customers = $paginator->paginate(
-            $arrayJson1->hydrateJsonToObject($arrayJson2), // Requête contenant les données à paginer (ici nos articles)
+            $arrayJson1, // Requête contenant les données à paginer (ici nos articles)
             $request->query->getInt('page', 1), // Numéro de la page en cours, passé dans l'URL, 1 si aucune page
-            6 // Nombre de résultats par page
+            10 // Nombre de résultats par page
         );
-
-
-        //dd($customers);
         return $this->render('display/index.html.twig', [
             'arrayAllCustomer' => $customers,
         ]);

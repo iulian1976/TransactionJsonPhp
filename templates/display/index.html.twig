@@ -31,9 +31,10 @@
         }
     </style>
 {# {{dump(arrayAllCustomer)}} #}
-    <div class="example-wrapper">
-        <h1>All Customers! ✅</h1>
 
+    <div class="example-wrapper">
+        <h1>✅</h1>
+        <caption>All Customers!</caption>
         <table id="customers">
             <tr>
                 <th>id</th>
@@ -43,10 +44,9 @@
                 <th>status</th>
                 <th>card_id</th>
                 <th>card_type</th>
-                <th>amount</th>
+                <th>amount (euro)</th>
                 <th>currency</th>
                 <th>country</th>
-                <th>created</th>
             </tr>
             {% for contentuser in arrayAllCustomer %}
 
@@ -68,6 +68,7 @@
         </table>
     </div>
 {% endblock %}
+
 {% block javascripts %}
 
 
