@@ -16,7 +16,6 @@
 
         #customers td, #customers th {
             border: 1px solid #ddd;
-            padding: 8px;
         }
 
         #customers tr:nth-child(even){background-color: #f2f2f2;}
@@ -31,27 +30,41 @@
             color: white;
         }
     </style>
-
+{# {{dump(arrayAllCustomer)}} #}
     <div class="example-wrapper">
-        <h1>Top 10! ✅</h1>
+        <h1>All Customers! ✅</h1>
 
         <table id="customers">
             <tr>
-                <th>nr</th>
-                <th>prénom</th>
-                <th>nom</th>
-                <th>score</th>
+                <th>id</th>
+                <th>event_name</th>
+                <th>merchant</th>
+                <th>terminal</th>
+                <th>status</th>
+                <th>card_id</th>
+                <th>card_type</th>
+                <th>amount</th>
+                <th>currency</th>
+                <th>country</th>
+                <th>created</th>
             </tr>
-            {% set nr = 1 %}
-            {% for user in arrayAllCustomer if nr<11 %}
+            {% for contentuser in arrayAllCustomer %}
+
                 <tr>
-                    <td>{{ nr }}</td>
-                    <td>{{ user.firstname }}</td>
-                    <td>{{ user.lastname }}</td>
-                    <td>{{ user.score }}</td>
+                    <td>{{ contentuser.getId() }}</td>
+                    <td>{{ contentuser.getEventName()}}</td>
+                    <td>{{ contentuser.getMerchant() }}</td>
+                    <td>{{ contentuser.getTerminal() }}</td>
+                    <td>{{ contentuser.getStatus() }}</td>
+                    <td>{{ contentuser.getCardId() }}</td>
+                    <td>{{ contentuser.getCardType() }}</td>
+                    <td>{{ contentuser.getAmount() }}</td>
+                    <td>{{ contentuser.getCurrency() }}</td>
+                    <td>{{ contentuser.getCountry() }}</td>
                 </tr>
-                {% set nr = nr + 1 %}
+
             {% endfor %}
+            {{ knp_pagination_render(arrayAllCustomer) }}
         </table>
     </div>
 {% endblock %}

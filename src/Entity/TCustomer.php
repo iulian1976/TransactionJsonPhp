@@ -71,6 +71,13 @@ class TCustomer
         return $this->id;
     }
 
+    public function setId(int $id): self
+    {
+        $this->id = $id;
+
+        return $this;
+    }
+
     public function getEventName(): ?string
     {
         return $this->event_name;
