@@ -47,13 +47,14 @@ class TCustomer
     private $card_type;
 
     /**
-     * @ORM\Column(type="string", length=255)
+     * @ORM\Column(type="float", length=10)
      */
     private $amount;
 
     /**
-     * @ORM\Column(type="float", length=10)
+     * @ORM\Column(type="string", length=255)
      */
+
     private $currency;
 
     /**
@@ -65,6 +66,11 @@ class TCustomer
      * @ORM\Column(type="date")
      */
     private $created;
+
+    /**
+     * @ORM\Column(type="integer")
+     */
+    private $count=0;
 
     public function getId(): ?int
     {
@@ -194,6 +200,18 @@ class TCustomer
     public function setCreated(\DateTimeInterface $created): self
     {
         $this->created = $created;
+
+        return $this;
+    }
+
+    public function getCount(): ?int
+    {
+        return $this->count;
+    }
+
+    public function setCount(int $count): self
+    {
+        $this->count = $count;
 
         return $this;
     }

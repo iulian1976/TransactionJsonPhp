@@ -30,7 +30,7 @@ class InputPhpJsonFile
 
 
     // --->>>treatment and modify "amount"
-    public function clearAmount(){  // because
+    public function clearAmount(){  // because each amont have a string '$','€'...
 
          $i=0;
         foreach ($this->arrayJson as $item) {
@@ -69,7 +69,7 @@ class InputPhpJsonFile
     //<<---treatment and modify "amount"
 
 
-    public function hydrateJsonToObject()
+    public function hydratedJsonToObject()
     {
         $customer = new TCustomer();
         $i=1;
@@ -93,7 +93,7 @@ class InputPhpJsonFile
             $this->arrayObject[$i]=$customer;
 
 
-             $i++;
+              $i++;
         }
 
         return  $this->arrayObject;
