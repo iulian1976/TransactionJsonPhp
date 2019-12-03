@@ -16,7 +16,7 @@ class TreatmensCustomers
 
     public function SumAmountAllCustomers($arrayListCustomer)
     {
-          $this->arrayCustomerDistinct=$this->DisplayAllCustomers($arrayListCustomer);
+          $this->arrayCustomerDistinct=$this->DisplayAllUniqueCustomers($arrayListCustomer);
           $i=0;
           foreach ($this->arrayCustomerDistinct as $key1 =>$result1) {
 
@@ -39,7 +39,7 @@ class TreatmensCustomers
          return  $this->arrayCustomSumAmount;
     }
 
-    public function DisplayAllCustomers($arrayListCustomer)
+    public function DisplayAllUniqueCustomers($arrayListCustomer)
     {
 
         // array Object to simple array for use array_unique

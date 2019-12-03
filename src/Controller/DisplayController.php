@@ -20,6 +20,7 @@ class DisplayController extends AbstractController
 {
 
     /**
+     * Display all customers
      * @Route("/display",  name="display")
      */
     public function alltransaction(InputPhpJsonFile $arrayJson1,PaginatorInterface $paginator,Request $request)
@@ -42,6 +43,7 @@ class DisplayController extends AbstractController
     }
 
     /**
+     * Display the Best 10 Customers with  the highest amounts
      * @Route("/displayten", name="displayten")
      */
     public function displayten(InputPhpJsonFile $arrayJson1,TreatmensCustomers $arrayAllCustomers )
@@ -59,14 +61,13 @@ class DisplayController extends AbstractController
 
         //dd($arrayAllCustomers->sortTenCustomers());
 
-
-
         return $this->render('display/firsttenamountsevents.html.twig', [
             'arrayFirstTenCustomers' => $arrayAllCustomers->sortTenCustomers(),
         ]);
     }
 
     /**
+     * Display the first 5 Customers with more transactions
      * @Route("/displayfive", name="displayfivetransaction")
      */
 
