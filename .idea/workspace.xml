@@ -1,9 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="61506dcd-3944-477b-953d-5eb61c9fc355" name="Default Changelist" comment="">
+    <list default="true" id="ae4a2c15-0098-481b-84e0-75361002c6fe" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/src/Controller/DisplayController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/DisplayController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Service/TreatmensCustomers.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Service/TreatmensCustomers.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -18,53 +17,32 @@
     </execution>
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+    <leaf>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/templates/base.html.twig">
+        <entry file="file://$PROJECT_DIR$/src/Service/InputPhpJsonFile.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="408">
-              <caret line="49" column="42" selection-start-line="49" selection-start-column="42" selection-end-line="49" selection-end-column="82" />
+            <state relative-caret-position="319">
+              <caret line="100" selection-start-line="100" selection-end-line="100" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Service/InputPhpJsonFile.php">
+        <entry file="file://$PROJECT_DIR$/templates/display/index.html.twig">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="12">
-              <caret line="71" column="42" selection-start-line="71" selection-start-column="42" selection-end-line="71" selection-end-column="42" />
-              <folding>
-                <element signature="e#31#56#0#PHP" expanded="true" />
-              </folding>
+            <state relative-caret-position="562">
+              <caret line="58" column="42" selection-start-line="58" selection-start-column="42" selection-end-line="58" selection-end-column="42" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/Service/TreatmensCustomers.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="22">
-              <caret line="18" column="92" lean-forward="true" selection-start-line="18" selection-start-column="92" selection-end-line="18" selection-end-column="92" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/templates/display/firstfiveevents.html.twig">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="404">
-              <caret line="39" column="37" selection-start-line="39" selection-start-column="37" selection-end-line="39" selection-end-column="37" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Controller/DisplayController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="230">
-              <caret line="61" column="53" selection-start-line="61" selection-start-column="53" selection-end-line="61" selection-end-column="53" />
+            <state relative-caret-position="539">
+              <caret line="60" column="60" lean-forward="true" selection-start-line="60" selection-start-column="60" selection-end-line="60" selection-end-column="60" />
               <folding>
-                <element signature="e#34#69#0#PHP" expanded="true" />
+                <element signature="e#32#67#0#PHP" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -83,10 +61,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/templates/display/firsttenamountsevents.html.twig">
+        <entry file="file://$PROJECT_DIR$/templates/base.html.twig">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-5">
-              <caret line="22" column="23" selection-start-line="22" selection-start-column="23" selection-end-line="22" selection-end-column="23" />
+            <state relative-caret-position="426">
+              <caret line="53" column="103" selection-start-line="53" selection-start-column="103" selection-end-line="53" selection-end-column="103" />
             </state>
           </provider>
         </entry>
@@ -109,8 +87,8 @@
         <option value="$PROJECT_DIR$/templates/display/index.html.twig" />
         <option value="$PROJECT_DIR$/src/Entity/TCustomer.php" />
         <option value="$PROJECT_DIR$/templates/display/fistfiveevents.html.twig" />
-        <option value="$PROJECT_DIR$/src/Controller/DisplayController.php" />
         <option value="$PROJECT_DIR$/src/Service/TreatmensCustomers.php" />
+        <option value="$PROJECT_DIR$/src/Controller/DisplayController.php" />
       </list>
     </option>
   </component>
@@ -185,7 +163,7 @@
       <path value="$PROJECT_DIR$/vendor/symfony/property-access" />
     </include_path>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="84" />
     <option name="y" value="104" />
     <option name="width" value="1400" />
@@ -202,6 +180,11 @@
             <path>
               <item name="TransactionJsonPhp" type="b2602c69:ProjectViewProjectNode" />
               <item name="TransactionJsonPhp" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="TransactionJsonPhp" type="b2602c69:ProjectViewProjectNode" />
+              <item name="TransactionJsonPhp" type="462c0819:PsiDirectoryNode" />
+              <item name="config" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="TransactionJsonPhp" type="b2602c69:ProjectViewProjectNode" />
@@ -228,24 +211,6 @@
             <path>
               <item name="TransactionJsonPhp" type="b2602c69:ProjectViewProjectNode" />
               <item name="TransactionJsonPhp" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="Migrations" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="TransactionJsonPhp" type="b2602c69:ProjectViewProjectNode" />
-              <item name="TransactionJsonPhp" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="Repository" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="TransactionJsonPhp" type="b2602c69:ProjectViewProjectNode" />
-              <item name="TransactionJsonPhp" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="Service" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="TransactionJsonPhp" type="b2602c69:ProjectViewProjectNode" />
-              <item name="TransactionJsonPhp" type="462c0819:PsiDirectoryNode" />
               <item name="templates" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -257,17 +222,8 @@
             <path>
               <item name="TransactionJsonPhp" type="b2602c69:ProjectViewProjectNode" />
               <item name="TransactionJsonPhp" type="462c0819:PsiDirectoryNode" />
-              <item name="translations" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="TransactionJsonPhp" type="b2602c69:ProjectViewProjectNode" />
-              <item name="TransactionJsonPhp" type="462c0819:PsiDirectoryNode" />
-              <item name="var" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="TransactionJsonPhp" type="b2602c69:ProjectViewProjectNode" />
-              <item name="TransactionJsonPhp" type="462c0819:PsiDirectoryNode" />
-              <item name="vendor" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
+              <item name="general" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -321,13 +277,13 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="142447000" />
+    <option name="totallyTimeSpent" value="142979000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1616" height="876" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.19858612" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -459,8 +415,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/display/index.html.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="211">
-          <caret line="14" column="48" selection-start-line="14" selection-start-column="48" selection-end-line="14" selection-end-column="48" />
+        <state relative-caret-position="562">
+          <caret line="58" column="42" selection-start-line="58" selection-start-column="42" selection-end-line="58" selection-end-column="42" />
         </state>
       </provider>
     </entry>
@@ -478,6 +434,34 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/templates/display/firsttenamountsevents.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-5">
+          <caret line="22" column="23" selection-start-line="22" selection-start-column="23" selection-end-line="22" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/base.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="426">
+          <caret line="53" column="103" selection-start-line="53" selection-start-column="103" selection-end-line="53" selection-end-column="103" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Service/InputPhpJsonFile.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="319">
+          <caret line="100" selection-start-line="100" selection-end-line="100" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Service/TreatmensCustomers.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="22">
+          <caret line="18" column="92" lean-forward="true" selection-start-line="18" selection-start-column="92" selection-end-line="18" selection-end-column="92" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/Controller/GeneralController.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
@@ -488,44 +472,13 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/display/firsttenamountsevents.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-5">
-          <caret line="22" column="23" selection-start-line="22" selection-start-column="23" selection-end-line="22" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/base.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="49" column="42" selection-start-line="49" selection-start-column="42" selection-end-line="49" selection-end-column="82" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Controller/DisplayController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="230">
-          <caret line="61" column="53" selection-start-line="61" selection-start-column="53" selection-end-line="61" selection-end-column="53" />
+        <state relative-caret-position="539">
+          <caret line="60" column="60" lean-forward="true" selection-start-line="60" selection-start-column="60" selection-end-line="60" selection-end-column="60" />
           <folding>
-            <element signature="e#34#69#0#PHP" expanded="true" />
+            <element signature="e#32#67#0#PHP" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Service/InputPhpJsonFile.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="12">
-          <caret line="71" column="42" selection-start-line="71" selection-start-column="42" selection-end-line="71" selection-end-column="42" />
-          <folding>
-            <element signature="e#31#56#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Service/TreatmensCustomers.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="22">
-          <caret line="18" column="92" lean-forward="true" selection-start-line="18" selection-start-column="92" selection-end-line="18" selection-end-column="92" />
         </state>
       </provider>
     </entry>
